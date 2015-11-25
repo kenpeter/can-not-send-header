@@ -1,0 +1,23 @@
+h1.
+  New list
+form(name="submit_new_list", action="/", method="post")
+  p
+    input(type="text", name="name")
+  p
+    input(type="hidden", name="New List", value="true")
+  p 
+    input(type="submit", name="my_submit_new_list", value="Add new list")
+
+h1.
+  Add item
+form(name="submit_add_item", action="/", method="post")
+  p
+    input(type="text", name="name", value="submit_add_item_name")
+  p
+    input(type="text", name="city")
+  p 
+    input(type="text", name="temp")
+  p
+    input(type="hidden", name="Add Item", value="true")
+  p
+    input(type="submit", name="my_submit_add_item", value="add new item")
